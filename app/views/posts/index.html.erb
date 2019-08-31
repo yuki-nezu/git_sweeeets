@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sweeeets</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <% @posts.each do |post| %>
+      <%= render partial: "posts", locals: {post: post} %>
+    <% end %>
+  </body>
