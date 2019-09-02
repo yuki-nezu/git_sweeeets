@@ -16,9 +16,11 @@
       </div>
       <div class="header_menu">
         <ul>
+          <li><%= link_to '投稿する', new_post_path, method: :get%></li>
           <li><%= link_to 'サインイン', new_user_session_path, method: :get%></li>
-          <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete%></li>
-          <li><%= link_to 'ユーザー登録', new_user_registration_path, method: :get%></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete%></li>
+          <% end %>
         </ul>
       </div>
     </header>
