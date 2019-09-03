@@ -9,6 +9,8 @@ class PostsController < ApplicationController
   end
 
   def create
+    Post.create(post_params)
+    redirect_to :root
   end
   
   def show
@@ -25,7 +27,7 @@ class PostsController < ApplicationController
   
   private
   def post_params 
-    params.require(:post).permit(:text,:image)
+    params.require(:post).permit(:image,:text)
   end
   
 end
