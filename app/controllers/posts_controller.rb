@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+  before_action :authenticate_user!, only: [:show, :new, :create, :edit, :update, :destroy]
   def index
     @posts = Post.all
   end 
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   end
   
   def show
-    Post.find(params[:id])
+    @post = Post.find(params[:id])
   end
   
   def edit
