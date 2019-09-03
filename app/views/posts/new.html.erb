@@ -1,8 +1,8 @@
 <div class="new_post">
   <%= form_for (@post) do |f| %>
     <%= f.label :画像 %><br />
-    <%= f.file_field :image, class: "image" %>
-    <%= f.text_field :text, class: "text" %>
+    <%= f.file_field :image %>
+    <%= f.text_field :text %>
     <%= f.submit %>
   <% end %>
 </div>
