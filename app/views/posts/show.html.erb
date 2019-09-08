@@ -1,7 +1,15 @@
 <div class="detail">
   <%= image_tag @post.image.url, :size =>'480x480' %>
   <%= simple_format(@post.text) %>
-  <div class="comments">
-    
+  <div class="like_button">
+    <% if current_user.already_liked?(@post) %>
+      <%= button_to 'イイネを取り消す', post_like_path(@post), method: :delete %>
+    <% else %>
+      <%= button_to 'イイネ', post_likes_path(@post) %>
+    <% end %>
+  </div>
+  <div class="liked_user">
+    <% @post.liked_user.each do |user| %>
+      <li><% user.nickname %></li>
   </div>
 </div>
