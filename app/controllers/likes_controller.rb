@@ -5,7 +5,7 @@ class LikesController < ApplicationController
     redirect_to :root
   end 
   
-  def destoy
+  def destroy
     @like = Like.find_by(post_id: params[:post_id], user_id: current_user.id)
     @like.destroy
     redirect_to :root

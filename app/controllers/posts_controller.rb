@@ -14,9 +14,9 @@ class PostsController < ApplicationController
   end
   
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:id]),
     @like = Like.new
-  end
+  end 
   
   def edit
   end 

@@ -9,7 +9,8 @@
     <% end %>
   </div>
   <div class="liked_user">
-    <% @post.liked_user.each do |user| %>
+    <% @post.liked_users.each do |user| %>
       <li><% user.nickname %></li>
+    <% end %>
   </div>
 </div>
