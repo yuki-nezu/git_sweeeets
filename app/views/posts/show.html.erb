@@ -3,9 +3,9 @@
   <%= simple_format(@post.text) %>
   <div class="like_button">
     <% if current_user.already_liked?(@post) %>
-      <%= button_to 'イイネを取り消す', post_like_path(@post), method: :delete %>
+      <%= button_to 'イイネを取り消す', post_like_path(@post),remote: true, method: :delete %>
     <% else %>
-      <%= button_to 'イイネ', post_likes_path(@post) %>
+      <%= button_to 'イイネ', post_likes_path(@post),remote: true %>
     <% end %>
   </div>
   <div class="like_count">
