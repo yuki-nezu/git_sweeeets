@@ -8,6 +8,9 @@
       <%= button_to 'イイネ', post_likes_path(@post) %>
     <% end %>
   </div>
+  <div class="like_count">
+    <%= @post.likes.count %>
+  </div>
   <div class="liked_user">
     <li>イイネしたユーザー</li>
     <% @post.liked_users.each do |user| %>
