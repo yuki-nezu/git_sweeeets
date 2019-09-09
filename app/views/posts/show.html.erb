@@ -2,11 +2,7 @@
   <%= image_tag @post.image.url, :size =>'480x480' %>
   <%= simple_format(@post.text) %>
   <div class="like_button">
-    <% if current_user.already_liked?(@post) %>
-      <%= button_to 'イイネを取り消す', post_like_path(@post),remote: true, method: :delete %>
-    <% else %>
-      <%= button_to 'イイネ', post_likes_path(@post),remote: true %>
-    <% end %>
+    <%= render partial: 'likes/like', locals: {post: @post} %>
   </div>
   <div class="like_count">
     <%= @post.likes.count %>
