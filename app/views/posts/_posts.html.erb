@@ -4,9 +4,4 @@
     <%= image_tag post.image.url, :size =>'480x480' %>
   <% end %>
   <%= simple_format(post.text) %>
-  <div class="contents_detail">
-    <ul>
-        <li><%= link_to '詳細', post_path(post.id), method: :get %></li>
-    </ul>
-  </div>
 </div>
