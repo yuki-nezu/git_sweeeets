@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:show, :new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @posts = Post.all.page(params[:page]).per(5)
   end 
@@ -15,7 +15,6 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find(params[:id])
-    @like = Like.new
   end 
   
   def edit

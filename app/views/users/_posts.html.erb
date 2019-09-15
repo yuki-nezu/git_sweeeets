@@ -4,10 +4,8 @@
   <div class="contents_detail">
     <ul>
         <li><%= link_to '詳細', post_path(post.id), method: :get %></li>
-      <% if user_signed_in? %>
         <li><%= link_to '編集', edit_post_path(post.id), method: :get %></li>
         <li><%= link_to '削除', '/posts/#{post.id}', method: :delete %></li>
-      <% end %>
     </ul>
   </div>
 </div>
