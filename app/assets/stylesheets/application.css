@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ 
+body {
+  margin: 0 10;
+}
 
 header {
   background-color: #ffadff;
@@ -20,12 +24,25 @@ header {
 }
 
 .header_title {
+  
+}
+
+.header_title h1 {
+}
+
+.header_title a {
+  display: block;
+  text-align: left;
+  width: 200px;
+  padding-left: 30px;
+  text-decoration: none;
+  line-height: 100px;
 }
 
 .header_menu {
   position: absolute;
   top: 45px;
-  left: 0;
+  left: 60%;
   right: 30px;
 }
 
@@ -35,7 +52,7 @@ header {
 
 .header_menu li{
   display: inline-block;
-  width: 10%;
+  width: 30%;
 }
 
 .header_menu a {
