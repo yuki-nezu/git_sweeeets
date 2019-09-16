@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <% @posts.each do |post| %>
-      <%= render partial: "posts", locals: {post: post} %>
-    <% end %>
+    <div class="container">
+      <% @posts.each do |post| %>
+        <%= render partial: "posts", locals: {post: post} %>
+      <% end %>
     <%= paginate(@posts) %>
+    </div>
   </body>

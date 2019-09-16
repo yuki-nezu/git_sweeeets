@@ -16,6 +16,7 @@
  
 body {
   margin: 0 10;
+  background-color: #f7efff;
 }
 
 header {
@@ -61,6 +62,60 @@ header {
   text-decoration: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.post_container {
+  display: flex;
+}
+
+.image_box {
+  width: 45%; 
+  object-fit: cover;
+}
+
 img {
   border-radius: 15%;
+  margin-top: 30px;
+  height: 320px;
+  width: 450px;
+}
+
+.post_container p {
+  line-height: 30px;
+  padding-top: 40px;
+  padding-left: 20px;
+  width: 45%;
+}
+
+.user {
+  line-height: 4px;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.iine {
+  list-style: none;
+  padding-left: 50px;
+  float: left;
+}
+
+.vertical_like {
+  padding-left: 130px;
+}
+
+.config ul{
+  display: flex;
+}
+
+.config li{
+  list-style: none;
+  padding: 0 30px;
+}
+
+.mypage h2{
+  text-align: center;
 }
