@@ -1,9 +1,10 @@
 <div class="contents_post">
-  <%= image_tag post.image.url, :size =>'480x480' %>
+  <%= link_to post_path(post.id) do%>
+    <%= image_tag post.image.url, :size =>'320x320' %>
+  <% end %>
   <%= simple_format(post.text) %>
   <div class="contents_detail">
     <ul>
-        <li><%= link_to '詳細', post_path(post.id), method: :get %></li>
         <li><%= link_to '編集', edit_post_path(post.id), method: :get %></li>
         <li><%= link_to '削除', '/posts/#{post.id}', method: :delete %></li>
     </ul>
