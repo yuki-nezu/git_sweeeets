@@ -1,7 +1,7 @@
 <div class="contents_post">
-  <a href="/users/<%= post.user.id %>"><%= post.user.nickname %></a>
+  ユーザー : <a href="/users/<%= post.user.id %>"><%= post.user.nickname %></a>
   <%= link_to post_path(post.id) do%>
-    <%= image_tag post.image.url, :size =>'480x480' %>
+    <%= image_tag post.image.url, :size =>'320x320' %>
   <% end %>
   <%= simple_format(post.text) %>
 </div>

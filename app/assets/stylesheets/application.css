@@ -21,6 +21,7 @@ body {
 header {
   background-color: #ffadff;
   height: 100px;
+  border-radius: 10px;
 }
 
 .header_title {
@@ -53,8 +54,13 @@ header {
 .header_menu li{
   display: inline-block;
   width: 30%;
+  text-align: center;
 }
 
 .header_menu a {
   text-decoration: none;
+}
+
+img {
+  border-radius: 15%;
 }

@@ -1,5 +1,5 @@
 <div class="detail">
-  <%= image_tag @post.image.url, :size =>'480x480' %>
+  <%= image_tag @post.image.url, :size =>'320x320' %>
   <%= simple_format(@post.text) %>
   <div id="likes_buttons_<%= @post.id %>">
     <%= render partial: 'likes/like', locals: { post: @post } %>
