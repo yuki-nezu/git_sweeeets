@@ -28,6 +28,8 @@ class PostsController < ApplicationController
   end 
   
   def destroy 
+    Post.destroy(params[:id])
+    redirect_to :root
   end 
   
   private
