@@ -1,5 +1,5 @@
 <div class="post_container">
-  <%= image_tag @post.image.url %>
+    <%= image_tag (@post.image.variant(combine_options:{resize:"400x400^",crop:"400x400+0+0",gravity: :center}).processed) if @post.image.attached? %>
   <%= simple_format(@post.text) %>
 </div>
   <div id="likes_buttons_<%= @post.id %>">

@@ -14,6 +14,10 @@
  *= require_self
  */
  
+ * {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+ }
+ 
 body {
   margin: 0 10;
   background-color: #f7efff;
@@ -45,7 +49,7 @@ header {
   position: absolute;
   top: 45px;
   left: 60%;
-  right: 60px;
+  right: 80px;
 }
 
 .header_menu ul {
@@ -74,12 +78,11 @@ header {
 img {
   border-radius: 5%;
   margin-top: 30px;
-  /*height: 320px;*/
-  /*width: 450px;*/
   object-fit: scale-down;
 }
 
 .post_container p {
+  text-align: left;
   line-height: 30px;
   padding-top: 40px;
   padding-left: 20px;

@@ -1,3 +1,4 @@
+<div class="container">
 <div class="new_post">
   <%= form_for (@post) do |f| %>
     <%= f.label :画像 %><br />
@@ -5,4 +6,5 @@
     <%= f.text_area :text %>
     <%= f.submit "投稿する", :class=>"btn" %>
   <% end %>
+</div>
 </div>
