@@ -76,9 +76,9 @@ header {
 }
 
 img {
+  object-fit: scale-down;
   border-radius: 5%;
   margin-top: 30px;
-  object-fit: scale-down;
 }
 
 .post_container p {
@@ -95,10 +95,15 @@ img {
   padding-left: 50px;
 }
 
-.iine {
+.like {
   list-style: none;
   padding-left: 50px;
   float: left;
+  font-size: 20px;
+}
+
+.count {
+  text-decoration: none;
 }
 
 .vertical_like {
