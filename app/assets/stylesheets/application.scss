@@ -12,11 +12,11 @@
  *
  *= require_tree .
  *= require_self
- */
- /*
  *= require font-awesome
  */
  
+ @import "font-awesome";
+
  * {
   font-family: 'M PLUS Rounded 1c', sans-serif;
  }
@@ -38,11 +38,19 @@ header {
   border-radius: 5px;
 }
 
+header_title {
+  display: inline-block;
+}
 
+.material-icons.large{
+  float: left;
+  color: #7f7fff;
+  font-size: 50px;
+  line-height: 100px;
+}
 
 .header_title a {
-  display: block;
-  text-align: left;
+  float: left;
   width: 200px;
   text-decoration: none;
   line-height: 100px;
