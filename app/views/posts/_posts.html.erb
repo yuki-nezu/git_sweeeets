@@ -1,9 +1,10 @@
 <div class="post_container">
   <div class="image_box">
     <%= link_to post_path(post.id) do%>
-      <%= image_tag post.image.url %>
+      <%= image_tag (post.image.variant(combine_options:{resize:"400x400^",crop:"400x400+0+0",gravity: :center}).processed) if post.image.attached? %>
     <% end %>
   </div>
     <%= simple_format(post.text) %>
 </div>
   <span class="user">ユーザー : <a href="/users/<%= post.user.id %>"><%= post.user.nickname %></a></span>
+  <hr>

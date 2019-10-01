@@ -1,6 +1,6 @@
 <div class="post_container">
   <%= link_to post_path(post.id) do%>
-    <%= image_tag post.image.url%>
+    <%= image_tag (post.image.variant(combine_options:{resize:"400x400^",crop:"400x400+0+0",gravity: :center}).processed) if post.image.attached? %>
   <% end %>
   <%= simple_format(post.text) %>
 </div>

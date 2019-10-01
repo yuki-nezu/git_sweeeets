@@ -13,6 +13,7 @@
 
   <body>
     <header>
+      <div class="container">
       <div class="header_title">
         <h1><%= link_to 'Sweeeets', root_path, method: :get %></h1>
       </div>
@@ -26,6 +27,7 @@
               <li><%= link_to 'サインイン', new_user_session_path, method: :get%></li>
             <% end %>
           </ul>
+      </div>
       </div>
     </header>
     <%= yield %>

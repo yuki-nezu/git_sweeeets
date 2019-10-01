@@ -1,8 +1,11 @@
-<div class="mypage">
+
+<div class="container">
+  <div class="mypage">
   <h2> <%= @nickname %> さんの投稿一覧</h2>
   <div class="user_posts">
     <% @user.posts.each do |post| %>
       <%= render partial: "posts", locals: {post: post} %>
     <% end %>
   </div>
+</div>
 </div>
