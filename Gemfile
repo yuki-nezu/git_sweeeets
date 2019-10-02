@@ -71,3 +71,4 @@ gem 'rails_12factor'
 gem 'mini_magick'
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
+gem "aws-sdk-s3", require: false
