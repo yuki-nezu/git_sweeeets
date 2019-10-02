@@ -6,7 +6,7 @@
 </div>
   <div class="config">
     <ul>
-        <li><%= link_to '編集する', edit_post_path, method: :get %></li>
+        <li><%= link_to '編集する', edit_post_path(post.id), method: :get %></li>
         <li><%= link_to '投稿を削除する', "/posts/#{post.id}", method: :delete, data: {confirm: "本当に削除しますか?", commit: "ok", cancel: "cancel"} %></li>
     </ul>
   </div>

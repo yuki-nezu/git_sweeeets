@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(image: post_params[:image], text: post_params[:text], user_id: current_user.id)
+    Post.create(post_params)
     redirect_to :root
   end
   
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
   
   private
   def post_params 
-    params.require(:post).permit(:image,:text)
+    params.require(:post).permit(:image,:text).merge user_id:current_user.id
   end
   
   def update_params
