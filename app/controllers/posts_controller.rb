@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    Post.create(create_params) if user_signed_in?
     redirect_to :root
   end
   
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
   end 
   
   private
-  def post_params 
+  def create_params 
     params.require(:post).permit(:image,:text).merge user_id:current_user.id
   end
   
