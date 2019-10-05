@@ -63,12 +63,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'pry-rails'
-gem 'carrierwave'
 gem 'kaminari'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
 gem 'mini_magick'
 gem 'twitter-bootstrap-rails'
-gem 'font-awesome-rails'
 gem "aws-sdk-s3", require: false

@@ -6,5 +6,5 @@
   </div>
     <%= simple_format(post.text) %>
 </div>
-  <span class="user">ユーザー : <a href="/users/<%= post.user_id %>"><%= post.user.nickname.html_safe %></a></span>
+  <span class="user">ユーザー : <a href="/users/<%= post.user_id %>"><%= post.user.nickname %></a></span>
   <hr>
