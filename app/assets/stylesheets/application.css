@@ -20,7 +20,6 @@
  }
 
 body {
-  margin: 0 10;
   background-color: #f7efff;
 }
 
@@ -29,6 +28,8 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+/*-------------------------ヘッダー----------------------------------*/
 
 header {
   background-color: #ffadff;
@@ -75,17 +76,14 @@ header_title {
   text-decoration: none;
 }
 
+/*------------------------コンテナー-----------------------------*/
 
 .post_container {
   display: flex;
 }
 
-.image_box {
-  width: 45%; 
-}
 
 img {
-  object-fit: scale-down;
   border-radius: 5%;
   margin-top: 30px;
 }
@@ -94,8 +92,7 @@ img {
   text-align: left;
   line-height: 30px;
   padding-top: 40px;
-  padding-left: 20px;
-  width: 45%;
+  padding-left: 100px;
 }
 
 .user {
@@ -103,6 +100,8 @@ img {
   padding-top: 60px;
   padding-left: 50px;
 }
+
+/*------------------------like周り----------------------------*/
 
 .like {
   list-style: none;
@@ -119,6 +118,8 @@ img {
   padding-top: 20px;
 }
 
+/*---------------------------マイページ周り--------------------------------------*/
+
 .config ul{
   display: flex;
 }
@@ -131,6 +132,8 @@ img {
 .mypage h2{
   text-align: center;
 }
+
+/*---------------------------create周り-----------------------------------------*/
 
 textarea {
         width: 300px;
@@ -167,4 +170,34 @@ input[type="email"] {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : #ead6ff;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
+}
+
+/*------------------------------レスポンシブ-------------------------------------*/
+
+@media (max-width: 800px) {
+.post_container {
+  display: block;
+  text-align: center;
+}
+
+
+img {
+  border-radius: 5%;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.post_container p {
+  text-align: left;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-left: 100px;
+}
+
+.user {
+  line-height: 4px;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
 }
