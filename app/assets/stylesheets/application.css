@@ -15,12 +15,11 @@
  */
  
 
- * {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
- }
 
 body {
   background-color: #f7efff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  
 }
 
 .container {
@@ -137,9 +136,9 @@ header_title {
   right: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
+  max-width: 210px;/*最大幅（調整してください）*/
   height: 100%;
-  background: #fff;/*背景色*/
+  background: #6c3524;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(100%);
   transform: translateX(100%);/*左に隠しておく*/
@@ -148,10 +147,15 @@ header_title {
 
 #nav-content ul {
   display: inline-block;
+  list-style: none;
 }
 
 #nav-content ul a {
-   list-style: none;
+   display: inline-block;
+   font-size: 20px;
+   padding-bottom: 10px;
+   text-decoration: none;
+   color: #fff;
 }
 
 /*チェックが入ったらもろもろ表示*/
@@ -173,7 +177,6 @@ header_title {
   }
   
 }
-
 
 
 /*------------------------コンテナー-----------------------------*/
