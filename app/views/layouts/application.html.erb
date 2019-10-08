@@ -6,30 +6,48 @@
     <%= csp_meta_tag %>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
   </head>
 
   <body>
     <header>
       <div class="container">
-      <div class="header_title">
-        <h1><i class="material-icons large">cake</i><%= link_to 'Sweeeets', root_path, method: :get %></h1>
-      </div>
-      <div class="header_menu">
-          <ul>
-            <li><%= link_to '投稿する', new_post_path, method: :get%></li>
-            <% if user_signed_in? %>
-              <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete%></li>
-              <li><%= link_to 'マイページ', user_path(current_user.id) %></li>
-            <% else %>
-              <li><%= link_to 'サインイン', new_user_session_path, method: :get%></li>
-            <% end %>
-          </ul>
-      </div>
+        <div class="header_title">
+          <h1><i class="material-icons large">cake</i><%= link_to 'Sweeeets', root_path, method: :get %></h1>
+        </div>
+        
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul>
+              <li><%= link_to '投稿する', new_post_path, method: :get%></li>
+              <% if user_signed_in? %>
+                <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete%></li>
+                <li><%= link_to 'マイページ', user_path(current_user.id) %></li>
+              <% else %>
+                <li><%= link_to 'サインイン', new_user_session_path, method: :get%></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        
+        <nav class="header_menu">
+            <ul>
+              <li><%= link_to '投稿する', new_post_path, method: :get%></li>
+              <% if user_signed_in? %>
+                <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete%></li>
+                <li><%= link_to 'マイページ', user_path(current_user.id) %></li>
+              <% else %>
+                <li><%= link_to 'サインイン', new_user_session_path, method: :get%></li>
+              <% end %>
+            </ul>
+        </nav>
+        
       </div>
     </header>
     <%= yield %>

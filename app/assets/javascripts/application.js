@@ -11,7 +11,17 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs 
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+
+$(function() {
+    $('#navToggle').click(function(){//headerに .openNav を付加・削除
+        $('header').toggleClass('openNav');
+    });
+});
+
+
+
