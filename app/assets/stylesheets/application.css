@@ -80,7 +80,7 @@ header_title {
 #nav-drawer {
   position: absolute;
   top: 60px;
-  left: 90%;
+  right: 7%;
 }
 
 /*チェックボックス等は非表示に*/
@@ -201,7 +201,6 @@ img {
 .user {
   line-height: 4px;
   padding-top: 60px;
-  padding-left: 50px;
 }
 
 
