@@ -185,7 +185,7 @@ img {
   margin-top: 30px;
 }
 
-.text-box {
+.post_container p {
   text-align: left;
   line-height: 30px;
   padding-top: 40px;
@@ -269,6 +269,14 @@ input[type="email"] {
   background    : #ffffff;     /* 文字色     */
 }
 
+/*----------------------------------footer-----------------------------------------*/
+
+footer p{
+  display: block;
+  text-align: center;
+  padding-top: 70px;
+}
+
 /*------------------------------レスポンシブ-------------------------------------*/
 
 @media (max-width: 800px) {
@@ -286,7 +294,7 @@ img {
   width: 80%;
 }
 
-.text-box {
+.post_container p {
   text-align: left;
   line-height: 30px;
   padding-top: 30px;
