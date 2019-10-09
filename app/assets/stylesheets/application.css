@@ -171,12 +171,6 @@ header_title {
 }
 
 
-@media screen and (min-width:1070px) {
-  #nav-open {
-    display:none;
-  }
-  
-}
 
 
 /*------------------------コンテナー-----------------------------*/
@@ -191,7 +185,7 @@ img {
   margin-top: 30px;
 }
 
-.post_container p {
+.text-box {
   text-align: left;
   line-height: 30px;
   padding-top: 40px;
@@ -292,11 +286,11 @@ img {
   width: 80%;
 }
 
-.post_container p {
+.text-box {
   text-align: left;
   line-height: 30px;
-  padding-top: 40px;
-  padding-left: 70px;
+  padding-top: 30px;
+  padding-left: 0;
 }
 
 .user {
@@ -311,6 +305,13 @@ img {
   
    .header_menu{
     display: none;
+  }
+  
+}
+
+@media screen and (min-width:1070px) {
+  #nav-open {
+    display:none;
   }
   
 }
