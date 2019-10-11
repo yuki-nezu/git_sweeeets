@@ -1,0 +1,35 @@
+inherit_from: .rubocop_todo.yml
+
+Rails:
+  Enabled: true
+  
+AllCops:
+  Exclude:
+    - "vendor/**/*" # rubocop config/default.yml
+    - "db/schema.rb"
+    - "config/environments/production.rb"
+    - "bin/*"
+    - "db/migrate/*"
+    - "test/test_helper.rb"
+    - "spec/**/*"
+    - "test/**/*"
+  DisplayCopNames: true
+  
+Metrics/AbcSize:
+  Max: 20
+  
+Style/ExtraSpacing:
+  Exclude:
+    - "db/migrate/*.rb"
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+  
+Style/Documentation:
+  Enabled: false
+    
+Metrics/LineLength:
+  Max: 160
