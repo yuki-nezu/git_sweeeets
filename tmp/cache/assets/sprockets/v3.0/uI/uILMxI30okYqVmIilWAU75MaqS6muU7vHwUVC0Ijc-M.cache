@@ -1,0 +1,7 @@
+I"v(function() {
+  $('#open_menu').click(function() {
+    return alert("こんにちは！");
+  });
+
+}).call(this);
+:ET
