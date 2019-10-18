@@ -22,7 +22,18 @@
   <div class="actions">
     <%= f.submit "ログイン", :class=>"log_in"  %>
   </div>
+
 <% end %>
+<p>↓テストユーザーとしてログインできます↓</p>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    <%= f.hidden_field :email, value: 'test@gmail.com' %>
+    <%= f.hidden_field :password, value: '222222' %>
+    <%= f.submit 'テストログイン', :class=>"log_in" %>
+
+<% end %>
+
+
 
 <%= render "devise/shared/links" %>
 </div>
