@@ -1,24 +1,28 @@
-# README
+# Sweeeets
+sweeeetsとはスイーツ専門の画像投稿型SNSです！
+投稿する画像のジャンルは問いません！
+ふらっと立ち寄ったカフェ、友人と並んで食べたスイーツ、記念日のケーキなど、気軽に投稿してみましょう！
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 使用技術
 
-Things you may want to cover:
+* Ruby 2.5.1
 
-* Ruby version
+* Ruby on Rails 5.2.3
 
-* System dependencies
+* 開発環境 : AWS cloud9
 
-* Configuration
+* アップロード : Heroku
 
-* Database creation
+* データベース : MySQL(php my admin)
 
-* Database initialization
+## アプリケーション機能一覧
 
-* How to run the test suite
+* active storageを使用した画像投稿機能
 
-* Services (job queues, cache servers, search engines, etc.)
+* いいね機能（Ajaxを用いた非同期通信）
 
-* Deployment instructions
+* ログインログアウト新規登録機能
 
-* ...
+* ページネーション機能
+
+* CSSのみでレスポンシブ対応
