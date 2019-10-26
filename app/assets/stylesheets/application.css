@@ -37,7 +37,7 @@ header {
 }
 
 header_title {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .material-icons.large{
@@ -55,10 +55,7 @@ header_title {
 }
 
 .header_menu {
-  position: absolute;
-  top: 45px;
-  left: 60%;
-  right: 80px;
+  line-height: 100px;
 }
 
 .header_menu ul {
