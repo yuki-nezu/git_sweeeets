@@ -227,6 +227,11 @@ img {
   text-align: center;
 }
 
+.user_index {
+  list-style: none;
+  margin: 20px;
+}
+
 /*---------------------------create周り-----------------------------------------*/
 
 textarea {
