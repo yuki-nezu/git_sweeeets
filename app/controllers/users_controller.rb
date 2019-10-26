@@ -7,4 +7,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @nickname = current_user.nickname
   end
+
+  def edit
+    @user = current_user
+  end
 end
